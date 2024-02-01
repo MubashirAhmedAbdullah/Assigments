@@ -1,0 +1,101 @@
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    /* background-color: rgb(102, 99, 99); */
+}
+body{
+    background-color:black;
+    margin: 0%;
+    padding: 0%;
+}
+
+li{
+    display:inline;
+    text-decoration: none;
+    padding: 3%;
+    flex-direction: row;
+    /* padding: center; */
+    
+}
+.nav{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18pt;
+}
+img{
+    width: 150px;
+    
+}
+ul{
+    text-decoration: none;
+    background-color: rgb(196, 218, 218);
+    height:80px;
+}
+.navigation bar{
+    background-color: rgb(153, 164, 173);
+    
+}
+.three{
+
+    padding: 8px;
+    border: 5px solid white;
+    text-align: center;
+    width: 320px;
+    height: 350px;
+    position:relative;
+    left:4%;
+    background-color: rgb(50, 112, 170);
+    color: white;
+    top: 27px;
+    
+
+}
+.one{
+    background-color: rgb(50, 112, 170);
+    width:900px;
+    height:430px ;
+    margin: 0%;
+    /* display: inline; */
+    margin-top: 5px;
+    position: relative;
+    left: 17%;
+
+    
+}
+.four{
+    position:absolute;
+    right: 337px;
+    top: 27px;
+    height: 190px;
+    width: 180px;
+}
+.five{
+    position: absolute;
+    right: 160px;
+    top: 27px;
+    height: 190px;
+    width: 180px;
+
+}
+.six{
+
+    position:absolute;
+    right: 336px;
+    top: 218px;
+    height: 190px;
+    width: 180px;
+}
+.seven{
+    position: absolute;
+    right: 160px;
+    top: 218px;
+    height: 190px;
+    width: 180px;
+}
+footer{
+    background-color:rgb(75, 66, 66);
+}
