@@ -1,0 +1,288 @@
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins/Poppins-Regular.ttf);
+}
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-container{
+    background-color: #0f0f0fcc;
+    width: 100%;
+    height: 50px;
+}
+
+
+.main-container{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0fcc;
+   
+}
+
+.main-container button{
+    background-color: white;
+}
+
+
+.navbar{
+    height: 44px;   
+    width: 100%;
+    
+   
+   
+  
+}
+
+
+.navbar ul{
+    text-align: center;
+    
+}
+
+
+.navbar li a{
+    color: rgb(190, 188, 188);
+    font-size:14pt;
+    text-align: center;
+    text-decoration: none;
+   
+
+}
+.navbar li a:hover{
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+}
+
+
+
+
+.pic-one{
+    width: 100%;
+    height: 540px;
+    background-image: url(./pics/1.jpg);
+    /* background-size: cover; */
+    background-size: cover;
+    
+}
+
+
+@media screen and (max-width: 735px) {
+    .pic-one{
+        background-image: url(./pics/2.jpg);
+    }
+    
+}
+
+
+.pic-one p{
+    color: white;
+    font-size: 17pt;
+    font-family: poppins;
+    text-align: center;
+    line-height: 40px;
+    text-wrap: wrap;
+
+}
+
+#one{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+
+
+.pic-two{
+    width: 100%;
+    height: 568px;
+    /* background-color: rgb(245, 114, 114); */
+    margin-top: 20px;
+    background-image: url(./pics/WhatsApp\ Image\ 2024-02-13\ at\ 21.10.35_aa0b19cd.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    
+   
+}
+
+
+
+.pic-two p{
+    color: black;
+    font-size: 17pt;
+    font-family: poppins;
+    text-align: center;
+    line-height: 40px;
+    text-wrap: wrap;
+
+}
+
+
+
+.three{
+    font-size: 50pt;
+    font-weight: bold; 
+}
+
+.four{
+    font-size: 20pt;
+
+
+}
+
+
+
+.pic-three{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 540px;
+    background-image: url(./pics/3.jpg);
+    /* background-size: cover; */
+    background-size: cover;
+    
+}
+
+
+
+.pic-three p{
+    color: black;
+    font-size: 17pt;
+    font-family: poppins;
+    text-align: center;
+    line-height: 40px;
+    text-wrap: wrap;
+
+}
+
+
+
+#four{
+    font-size: 50pt;
+    font-weight: bold; 
+}
+
+.five{
+    font-size: 20pt;
+}
+
+
+
+/* @media screen and (max-width: 735px) {
+
+    #six{
+        width: 100%;
+    }
+
+    #seven{
+        width: 100%;
+    }
+    
+} */
+
+
+.pic-four{
+    width: 100%;
+    height: 560px;
+    margin-top: 10px ;
+}
+
+
+#six{
+    /* width: 100%; */
+    height: 560px;
+    background-image: url(./pics/5.jpg);
+    background-size: cover;
+}
+#seven{
+    /* width: 100%; */
+    height: 560px;
+    background-image: url(./pics/4.jpg);
+    background-size: cover;
+}
+
+
+#eight{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+
+.six{
+    font-size: 18pt;
+}
+
+
+#nine{
+    font-size: 30pt;
+    font-weight: bold;
+    color: white; 
+}
+
+
+#ten{
+    color: red;
+}
+
+.seven{
+    font-size: 18pt;
+    color: white;
+}
+
+
+
+
+.pic-five{
+    width: 100%;
+    height: 560px;
+    margin-top: 10px ;
+}
+
+
+#eleven{
+    /* width: 100%; */
+    height: 560px;
+    background-image: url(./pics/9.jpg);
+    background-size: cover;
+}
+#twelve{
+    /* width: 100%; */
+    height: 560px;
+    background-image: url(./pics/6.jpg);
+    background-size: cover;
+}
+
+
+#nine{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+
+.eight{
+    font-size: 18pt;
+}
+
+
+/* #nine{
+    font-size: 30pt;
+    font-weight: bold;
+    color: white; 
+} */
+
+
+/* #ten{
+    color: red;
+} */
+
+.nine{
+    font-size: 18pt;
+    color: black;
+}
+
+
+
