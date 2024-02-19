@@ -1,288 +1,291 @@
 @font-face {
-    font-family: poppins;
-    src: url(./font/Poppins/Poppins-Regular.ttf);
+    font-family: Aldrich ;
+    src: url(./Assest/font/Aldrich/Aldrich-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(./Assest/font/Poppins/Poppins-Regular.ttf);
 }
 
 
 
 
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     margin: 0;
     padding: 0;
-
+    /* background-color: rgb(45, 129, 165); */
 }
-
-.navbar-container{
-    background-color: #0f0f0fcc;
-    width: 100%;
-    height: 50px;
-}
-
-
-.main-container{
-    width: 100%;
-    height: 50px;
-    background-color: #0f0f0fcc;
-   
-}
-
-.main-container button{
-    background-color: white;
-}
-
 
 .navbar{
-    height: 44px;   
+    background-color: #161617cc;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     width: 100%;
-    
-   
-   
-  
+    height: 50px;
+    /* flex-wrap: wrap; */
+    margin: 0px 0px 10px 0px;
 }
 
 
 .navbar ul{
-    text-align: center;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-
-.navbar li a{
-    color: rgb(190, 188, 188);
-    font-size:14pt;
-    text-align: center;
+.navbar ul li {
+    list-style: none;
+    margin: 0px 10px 0px 8px;
     text-decoration: none;
-   
-
 }
-.navbar li a:hover{
+
+.navbar ul li a{
     text-decoration: none;
-    color: rgb(190, 188, 188);
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 930px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar i{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .apple-icon{
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+.navbar i{
+    font-size: 1.45rem;
+    margin: 0px 0px 10px 0px;
+}
+
+.end-icon{
+    display: flex;
+    gap: 20px
+    ;
+}
+
+.apple-icon{
+    margin: 0px 0px 0px 10px;
 }
 
 
 
 
-.pic-one{
+.iphone-image{
+    height: 563px;
     width: 100%;
-    height: 540px;
-    background-image: url(./pics/1.jpg);
-    /* background-size: cover; */
+    background-image: url(./Assest/pics/1.jpg);
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    
+    color: white;
+    text-align: center;
 }
 
 
 @media screen and (max-width: 735px) {
-    .pic-one{
-        background-image: url(./pics/2.jpg);
+    .iphone-image{
+        background-image: url(./Assest/pics/2.jpg);
+        background-position: center;
+        
+    }
+    
+    .iphone-image-two{
+        background-position: center;
+        background-image: url(./Assest/pics/hero_iphone15_announce__uuemlcwczn6u_small.jpg);
+        
     }
     
 }
 
 
-.pic-one p{
-    color: white;
-    font-size: 17pt;
-    font-family: poppins;
-    text-align: center;
-    line-height: 40px;
-    text-wrap: wrap;
+.one{
 
-}
-
-#one{
-    font-size: 30pt;
+    font-family: Poppins;
+    font-size: 3rem;
     font-weight: bold;
-}
-
-
-
-.pic-two{
-    width: 100%;
-    height: 568px;
-    /* background-color: rgb(245, 114, 114); */
-    margin-top: 20px;
-    background-image: url(./pics/WhatsApp\ Image\ 2024-02-13\ at\ 21.10.35_aa0b19cd.jpg);
-    background-size: cover;
-    /* background-repeat: no-repeat; */
     
-   
 }
 
-
-
-.pic-two p{
-    color: black;
-    font-size: 17pt;
-    font-family: poppins;
-    text-align: center;
-    line-height: 40px;
-    text-wrap: wrap;
-
-}
-
-
-
-.three{
-    font-size: 50pt;
+.two{
+    font-family: Poppins;
+    font-size: 1.8rem;
     font-weight: bold; 
 }
 
-.four{
-    font-size: 20pt;
-
-
+.three span a{
+    font-family: poppins;
+    font-size: 1.2rem;
+    text-decoration: none;
+    word-spacing: 1rem;
+    /* letter-spacing: 1rem; */
 }
 
 
 
-.pic-three{
+@media screen and (max-width:480px) {
+    .one{
+        font-size: 2rem;
 
-    margin-top: 10px;
-    width: 100%;
-    height: 540px;
-    background-image: url(./pics/3.jpg);
-    /* background-size: cover; */
-    background-size: cover;
+    }
+
+    .two{
+        font-size: 1.25rem;
+        /* display: flex; */
+
+        flex-wrap: nowrap;
+    }
     
 }
 
 
 
-.pic-three p{
-    color: black;
-    font-size: 17pt;
-    font-family: poppins;
-    text-align: center;
-    line-height: 40px;
-    text-wrap: wrap;
-
-}
-
-
-
-#four{
-    font-size: 50pt;
-    font-weight: bold; 
-}
-
-.five{
-    font-size: 20pt;
-}
-
-
-
-/* @media screen and (max-width: 735px) {
-
-    #six{
+.phone-image-two{
+        height: 563px;
         width: 100%;
-    }
+        background-image: url(./Assest/pics/5.jpg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        color: black;
+        text-align: center;
+        background-position: center;
+    
 
-    #seven{
+}
+
+
+.vision-pro-image{
+    height: 563px;
         width: 100%;
+        background-image: url(./Assest/pics/963cfb76c97ab3a4f31a8b6616b42e97.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: cover; */
+        color: black;
+        text-align: center;
+        
+}
+
+#watch-image{
+    height: 563px;
+        width: 100%;
+        background-image: url(./Assest/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: black;
+        text-align: center;
+}
+
+
+#macbook-image{
+    height: 563px;
+        width: 100%;
+        background-image: url(./Assest/promo_mbp__ek7p477bkp6q_large.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: black;
+        text-align: center;
+}
+
+
+
+#ipad-image{
+    height: 563px;
+    width: 100%;
+    background-image: url(./Assest/promo_ipad__fioegapg12qi_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+#airpods-image{
+    height: 563px;
+    width: 100%;
+    background-image: url(./Assest/promo_airpods_pro_order__d8xv36p4uwae_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+
+
+#card-image{
+    height: 563px;
+    /* width: 100%; */
+    background-image: url(./Assest/tile__cauwwcyyn9hy_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+
+#trade-in-image{
+    height: 563px;
+    /* width: 100%; */
+    background-image: url(./Assest/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+.slide-div{
+    width: 80%;
+    height: fit-content;
+    margin: 5%;
+    margin-left: 10%;
+    
+}
+
+footer{
+    background-color: aliceblue;
+}
+
+
+.footer-section-one{
+    color: black;
+    margin: 7% 10% 3% 10%;
+}
+
+.footer-section-two{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-section-two{
+        /* display: block; */
+        flex-wrap: wrap;
+        
     }
     
-} */
 
-
-.pic-four{
-    width: 100%;
-    height: 560px;
-    margin-top: 10px ;
+    
 }
 
-
-#six{
-    /* width: 100%; */
-    height: 560px;
-    background-image: url(./pics/5.jpg);
-    background-size: cover;
+.footer-section-two ul{
+    list-style: none;
 }
-#seven{
-    /* width: 100%; */
-    height: 560px;
-    background-image: url(./pics/4.jpg);
-    background-size: cover;
-}
-
-
-#eight{
-    font-size: 30pt;
-    font-weight: bold; 
-}
-
-.six{
-    font-size: 18pt;
-}
-
-
-#nine{
-    font-size: 30pt;
-    font-weight: bold;
-    color: white; 
-}
-
-
-#ten{
-    color: red;
-}
-
-.seven{
-    font-size: 18pt;
-    color: white;
-}
-
-
-
-
-.pic-five{
-    width: 100%;
-    height: 560px;
-    margin-top: 10px ;
-}
-
-
-#eleven{
-    /* width: 100%; */
-    height: 560px;
-    background-image: url(./pics/9.jpg);
-    background-size: cover;
-}
-#twelve{
-    /* width: 100%; */
-    height: 560px;
-    background-image: url(./pics/6.jpg);
-    background-size: cover;
-}
-
-
-#nine{
-    font-size: 30pt;
-    font-weight: bold; 
-}
-
-.eight{
-    font-size: 18pt;
-}
-
-
-/* #nine{
-    font-size: 30pt;
-    font-weight: bold;
-    color: white; 
-} */
-
-
-/* #ten{
-    color: red;
-} */
-
-.nine{
-    font-size: 18pt;
-    color: black;
-}
-
-
-
