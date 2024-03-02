@@ -1,73 +1,88 @@
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-div{
-    display:inline-block;
-}
-li{
-    display: inline-block;
-    padding-left: 30px;
-
-}
-.abc{
-
-    padding-left: 350px;
-    display: inline-block;
-
-}
-p{
-    display: inline-block;
-    padding: 10px;
+body{
+    background-color: aqua;
 }
 
-h1{
-    color: rgb(22, 184, 22);
+@font-face {
+    font-family:lemon ;
+    src: url(./fonts/Lemon/Lemon-Regular.ttf);
 }
-.g{
-    font-size: 120px;
-    color: rgb(34, 201, 34);
-    padding-left: 70px;
-
-}   
-span{
-    font-size: 100px;
-    color: rgb(31, 194, 31);
-    padding-left: 100px;
+@font-face {
+    font-family: Bungee_spice;
+    src: url(./fonts/Bungee_Spice/BungeeSpice-Regular.ttf);
 }
-.abdullah{
-    font-size: 30px;
-    padding-left: 100px;
-    display: block;
+@font-face {
+    font-family: Lobster;
+    src: url(./fonts/Lobster/Lobster-Regular.ttf);
 }
-img{
-    padding-left: 200px;
+@font-face {
+    font-family: luckiest_Guy;
+    src: url(./fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
 }
-form{
-    font-size: 100px;
-    padding-left: 100px;
-}
-.col-2{
-    padding-left: 100px;
-     font-size: 30px ;
-}
-.col-3{
-    font-size: larges;
-}
-.btn{
-    display: inline-block;
-    background: rgb(32, 204, 32);
-    color: black;
-    padding-left: 10px;
-    margin: 30px 0;
-    border-radius:300px ;
-    font-size: 50px;
+@font-face {
+    font-family:oleo regular ;
+    src: url(./fonts/Oleo_Script/OleoScript-Regular.ttf);
 
 }
-.block{
-      display:inline;
-    padding-left:1px;
-    height: 100px;
-    width: 120px;
+@font-face {
+    font-family: oleobold;
+    src: url(./fonts/Oleo_Script/OleoScript-Bold.ttf);
+}
+.heading{
+    text-align: center;
+    font-size: 48px;
+    font-family:luckiest_Guy;
+}
+.a{
+    font-size: 36px;
+    font-family: algerian;
+    font-weight: 500;
+    text-align: center;
+    text-decoration:none;
+}
+.b{
+    font-size: 40px;
+    font-family: Bungee_spice;
+    text-align: left;
+    word-spacing:normal;
+
+}
+.data{
+    text-align: center;
+    text-decoration: underline;
+    border: 5px;
+}
+.c{
+    height: 160px;
+    width: 180px;
+    align-content: center;
+    border: 10px;
+}
+.d,h3{
+    text-align: center;
+    font-family: oleo regular;
+    font-size:36px;
+}
+.e{
+    align-items: center;
+}
+.f{
+    height: 60px;
+    width: 50px;
+}
+.main{
+    align-items: center;
+}
+#A,#B,#C,#D,#E,#F,#G,#H,#I,#J,#K,#L,#M,#N,#O,#P,#Q,#R,#S,#T,#U,#V,#W,#X,#Y,#Z{
+    text-align: center;
+}
+.button{
+    height: 80px;
+    width: 80px;
+    align-items: right;
+}
+.return{
+    text-align:right ;
+}
+#hit{
+    margin: auto;
 }

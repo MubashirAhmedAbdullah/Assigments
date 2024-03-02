@@ -1,0 +1,73 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+div{
+    display:inline-block;
+}
+li{
+    display: inline-block;
+    padding-left: 30px;
+
+}
+.abc{
+
+    padding-left: 350px;
+    display: inline-block;
+
+}
+p{
+    display: inline-block;
+    padding: 10px;
+}
+
+h1{
+    color: rgb(22, 184, 22);
+}
+.g{
+    font-size: 120px;
+    color: rgb(34, 201, 34);
+    padding-left: 70px;
+
+}   
+span{
+    font-size: 100px;
+    color: rgb(31, 194, 31);
+    padding-left: 100px;
+}
+.abdullah{
+    font-size: 30px;
+    padding-left: 100px;
+    display: block;
+}
+img{
+    padding-left: 200px;
+}
+form{
+    font-size: 100px;
+    padding-left: 100px;
+}
+.col-2{
+    padding-left: 100px;
+     font-size: 30px ;
+}
+.col-3{
+    font-size: larges;
+}
+.btn{
+    display: inline-block;
+    background: rgb(32, 204, 32);
+    color: black;
+    padding-left: 10px;
+    margin: 30px 0;
+    border-radius:300px ;
+    font-size: 50px;
+
+}
+.block{
+      display:inline;
+    padding-left:1px;
+    height: 100px;
+    width: 120px;
+}
