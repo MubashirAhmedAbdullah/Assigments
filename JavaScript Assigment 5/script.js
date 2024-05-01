@@ -16,6 +16,9 @@ setInterval(function(){
     if(hours.innerText <= 9){
         hours.innerText = "0" + currentDate.getHours();
     }
+    if(hours.innerText > 12){
+        hours.innerText = currentDate.getHours() - 12 ;
+    }
     
     if(minutes.innerText <= 9){
         minutes.innerText = "0" + currentDate.getMinutes();
@@ -24,15 +27,15 @@ setInterval(function(){
     if(seconds.innerText <= 9){
         seconds.innerText = "0" + currentDate.getSeconds();
     }
+    if (hours.innerText <= 12){
+        am_pm.innerText = "am"
+    }
+    else{
+        am_pm.innerText = "pm";
+    }
 }, 1000);
 
 
-if (hours.innerText <= 12){
-    am_pm.innerText = "am"
-}
-else{
-    am_pm.innerText = "pm";
-}
 
 
 var date = new Date();
@@ -43,7 +46,7 @@ var year = document.getElementById("year");
 var monthsname = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JULY", "AUG", "SEP", "OCT", "NOV","DEC"];
 var daysname = ["MONDAY", "TUESDAY", "WEDNESDAY" , "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"];
 
-currentDate.innerText ="TODAY DATE IS : " + date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();
-day.innerText = "TODAY IS : " + daysname[date.getDay()];
-month.innerText = "CURRENT MONTH : " + monthsname[date.getMonth()];
+currentDate.innerText ="TODAY DATE IS : " + date.getDate() + " - " + monthsname[date.getMonth()] + " - " + date.getFullYear();
+day.innerText = "TODAY IS : " + daysname[date.getDay() - 1];
+month.innerText = "CURRENT MONTH IS : " + monthsname[date.getMonth()];
 year.innerText = "CURRENT YEAR IS : " + date.getFullYear();
