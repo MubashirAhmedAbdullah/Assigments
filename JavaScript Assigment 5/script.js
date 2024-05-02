@@ -12,7 +12,13 @@ setInterval(function(){
     hours.innerText = currentDate.getHours();
     minutes.innerText = currentDate.getMinutes();
     seconds.innerText = currentDate.getSeconds();
-
+    
+    if (hours.innerText < 12){
+        am_pm.innerText = "am"
+    }
+    else{
+        am_pm.innerText = "pm";
+    }
     if(hours.innerText <= 9){
         hours.innerText = "0" + currentDate.getHours();
     }
@@ -26,12 +32,6 @@ setInterval(function(){
 
     if(seconds.innerText <= 9){
         seconds.innerText = "0" + currentDate.getSeconds();
-    }
-    if (hours.innerText <= 12){
-        am_pm.innerText = "am"
-    }
-    else{
-        am_pm.innerText = "pm";
     }
 }, 1000);
 
