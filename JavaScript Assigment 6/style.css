@@ -1,0 +1,110 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assest/vintage-style-floral-border-wedding-invitation-card-design_1017-44448.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-heading{
+    text-align: center;
+    font-size: 30pt;
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.sec-heading{
+    color: blue;
+    font-size: 23pt;
+    /* margin-left: 50px;
+    margin-top: 70px; */
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.countdown-container {
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    margin-top: 70px;
+    line-height: 50px;
+}
+
+.countdown-item {
+    margin: 0 10px;
+    /* border: 2px solid black; */
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: bold;
+    /* color: white; */
+    color: green;
+    text-align: center;
+}
+
+
+.time-name{
+    color: red;
+}
+
+
+
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    body{
+        background-image: url(./assest/vintage-style-floral-border-wedding-invitation-card-design_1017-44448.avif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+    .main-heading{
+        text-align: center;
+        font-size: 15pt;
+        color: black;
+        text-decoration: underline;
+        font-style: italic;
+        margin-top: 40px;
+    }
+
+
+    .sec-heading{
+        color: blue;
+        font-size: 14pt;
+        text-align: center;
+        text-decoration: underline;
+    
+    }
+
+
+    .countdown-item {
+        /* margin: 0 10px; */
+        /* border: 2px solid black; */
+        font-size: 13pt;
+        font-style: italic;
+        font-weight: bold;
+        /* color: white; */
+        color: green;
+        text-align: left;
+    }
+
+
+    .countdown-container {
+        margin-top: 30px;
+    }
+    
+    
+
+
+    
+}
+
