@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url(./assest/pngtree-3d-illustration-of-stopwatch-image_13570039.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.developer-name{
+  height: max-content;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15pt;
+  margin-left: 480px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  padding: 10px;
+  
+}
+
+
+
+.developer-name:hover{
+  color: #00215E;
+}
+
+.container{
+  width: 400px;
+  height: 230px;
+  margin-left: 450px;
+  margin-top: 100px;
+  /* box-shadow: 0 0 10px #135D66; */
+  /* background-color: #FFE0B5; */
+  /* background-color: #BED7DC; */
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 120px; */
+  gap: 10px;
+  width: 400px;
+  /* margin-left: 480px; */
+  background-color: transparent;
+}
+
+.watch-time{
+  font-size: 40pt;
+  /* border: 2px solid black; */
+  margin-top: 30px;
+  height: 70px;
+  width: 100px;
+  text-align: center;
+  /* padding-top: 25px; */
+  background-color: transparent;
+  /* box-shadow: 0 0 20px #135D66; */
+  border-radius: 50%;
+  /* color: blue; */
+  color: white;
+
+
+}
+
+
+.watch{
+  font-size: 38pt;
+  color: white;
+}
+
+.fuction-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  
+}
+
+.btn{
+  height: 30px;
+  width: 80px;
+  font-size: 15pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #9BCF53;
+  /* box-shadow: 0 0 20px #135D66; */
+  color: white;
+  border: none;
+  border-radius: 20px;
+
+}
+
+
+
