@@ -15,7 +15,7 @@
           clearInterval(interval);
           runningNumber = 0;
           number_html.innerText = runningNumber;
-          result.innerText = "You are late";
+          result.innerText = "YOU ARE LATE";
           start_btn.disabled = false;
         } else {
           runningNumber++;
@@ -24,7 +24,7 @@
       }, 10);
       start_btn.disabled = true;
     } else {
-      alert("Number to daaldo");
+      alert("PLEASE ENTER THE VALUE");
     }
   }
   function stop() {
