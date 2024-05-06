@@ -14,7 +14,7 @@ function start(){
     watchinterval = setInterval(function(){
         millisecond++ ;
 
-        if(millisecond >= 999){
+        if(millisecond >= 99){
            seconds++ ; 
            millisecond = 0 ;
         }
