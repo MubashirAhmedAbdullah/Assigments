@@ -1,0 +1,131 @@
+@font-face {
+    font-family: lobster;
+    src: url(./font/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: aldrich;
+    src: url(./font/Aldrich/Aldrich-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: luckiest;
+    src: url(./font/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: lemon;
+    src: url(./font/Lemon/Lemon-Regular.ttf);
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-color: aqua; */
+    background-image: url(./pic/realistic-hexagonal-background_79603-1646.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: lemon;
+    color: white;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.heading{
+    font-size: 35pt;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.instruction p{
+    font-size: 25pt;
+    margin-left: 1rem;
+} 
+
+.instruction ol{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.game{
+    /* border: 2px solid black; */
+    padding-left: 29rem;
+}
+
+.random{
+    font-size: 35pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    padding-left: 13rem;
+}
+
+#input{
+    width: 30rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 17pt;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1.8rem;
+}
+
+
+.btn{
+    /* border: 2px solid black; */
+    width: max-content;
+    margin-top: 3rem;
+    
+}
+
+.button{
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(47, 240, 47);
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.button:hover{
+    background-color: rgb(69, 69, 212);
+    
+}
+
+.btn-two{
+    margin-left: 20px;
+}
+
+
+
+.result{
+    font-size: 20pt;
+    margin-top: 3rem;
+    padding-left: 15rem;
+}

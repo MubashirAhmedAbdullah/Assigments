@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICK GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">QUICK STOP</h1>
+        <div class="instruction">
+            <p>GAME INSTRUCTION</p>
+            <ol>
+                <li>You have to click  before 1000 .</li>
+                <li>If number matches your number then you will win.</li>
+                <li>If it doesnt match then you are loss.</li>
+            </ol>
+
+
+            <hr>
+
+            <div class="game">
+                <div class="random" id="countNumber">00</div>
+
+
+                <input type="number" placeholder="ENTER THE NUMBER UNDER 1000" id="input">
+
+                <div class="btn">
+                    <button class="button" id="start" onclick="start()">START</button>
+                    <button class="button btn-two" onclick="stop()">STOP</button>
+                    
+                </div>
+
+            </div>
+            <div class="result">RESULT : <span id="result"></span></div>
+
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
