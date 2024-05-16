@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finance Tracker</title>
+  <title>FINANCE WEB</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Finance Tracker</h1>
-    <div class="form">
-      <label for="income">Income:</label>
-      <input type="number" id="income" placeholder="Enter your income">
-      <label for="expense">Expense:</label>
-      <input type="number" id="expense" placeholder="Enter your expense">
-      <label for="description">Description:</label>
-      <input type="text" id="description" placeholder="Enter description">
-      <button onclick="addTransaction()">Add Transaction</button>
-    </div>
-    <div class="summary">
-      <h2>Monthly Summary</h2>
-      <p>Total Income: <span id="totalIncome">0</span></p>
-      <p>Total Expenses: <span id="totalExpense">0</span></p>
-      <p>Savings: <span id="savings">0</span></p>
-    </div>
-    <div class="transactions">
-      <h2>Recent Transactions</h2>
-      <ul id="transactionList"></ul>
-    </div>
+
+  <div class="designer">DESIGN BY MUBASHIR AHMED </div>
+
+  <div class="display-field">
+    <div class="result" id="result">00</div>
+    <div class="second">
+    <div class="user-income" id="income">00</div>
+    <div class="user-expense" id="expense">00</div>
   </div>
-  <script src="script.js"></script>
+  </div>
+
+  <div class="input-field">
+    <input type="number" id="user-input" placeholder="INPUT YOUR NUMBER">
+  </div>
+
+  <div class="buttons">
+    <button type="button" id="income-btn" class="btn" onclick="addincome()">ADD IN INCOME</button>
+    <button type="button" id="expense-btn" class="btn" onclick="addexpense()">ADD IN EXPENSE</button>
+  </div>
+  
 </body>
+<script src="script.js"></script>
 </html>

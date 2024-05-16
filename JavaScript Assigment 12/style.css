@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #444;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.designer{
+    text-align: center;
+    font-size: 15pt;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.image img{
+    height: 300px;
+    width: 190px;
+    /* border: 2px solid white; */
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+
+.buttons{
+    position: relative;
+    left: 50%;
+    top: -70px;
+}
+
+
+.btn{
+    background-color: #3ce92c;
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+.btn:active{
+    background-color: #1f45f0;
+}
