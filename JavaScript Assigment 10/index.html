@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FINANCE WEB</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="designer">DESIGN BY MUBASHIR AHMED </div>
-
-  <div class="display-field">
-    <div class="result" id="result">00</div>
-    <div class="second">
-    <div class="user-income" id="income">00</div>
-    <div class="user-expense" id="expense">00</div>
-  </div>
-  </div>
-
-  <div class="input-field">
-    <input type="number" id="user-input" placeholder="INPUT YOUR NUMBER">
-  </div>
-
-  <div class="buttons">
-    <button type="button" id="income-btn" class="btn" onclick="addincome()">ADD IN INCOME</button>
-    <button type="button" id="expense-btn" class="btn" onclick="addexpense()">ADD IN EXPENSE</button>
-  </div>
-  
+  <div class="designer">DESIGN BY MUBASHIR AHMED</div>
+    <div class="container">
+        <h1 class="heading">Finance Tracker</h1>
+        <div class="display-section">
+          <div class="display" id="savingsDisplay">Savings: $0</div>
+          <div class="section">
+            <div class="display" id="incomeDisplay">Income: $0</div>
+            <div class="display" id="expenseDisplay">Expenses: $0</div>
+          </div>
+        </div>
+        <div class="input-section">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <div class="buttons">
+            <button class="btn" id="addIncome">Add Income</button>
+            <button class="btn" id="addExpense">Add Expense</button>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
+
