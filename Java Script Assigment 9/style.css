@@ -81,3 +81,19 @@ button:active{
   background-color: orangered;
   font-weight: bold;
 }
+
+
+
+@media screen and (max-width :425px) and (min-width : 320px) {
+
+  .display input{
+    width: 250px;
+  }
+
+  button{
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+  }
+  
+}
