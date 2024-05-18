@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TEST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="designer">DESIGN BY MUBASHIR AHMED</div>
+    <div class="heading">TEXT EDITOR</div>
+    
+    <div class="container">
+        <div class="command-panel">
+            <ul>
+
+            <li>Bold Text<button type="button" onclick="textbold()"><i class="fa-solid fa-bold"></i></button></li>
+            <li>Italic Text<button type="button" onclick="textitalic()"><i class="fa-solid fa-italic"></i></button></li>
+            <li>Underline Text<button type="button" onclick="textunderline()"><i class="fa-solid fa-underline"></i></button></li>
+            <li>Font Size<button type="button" onclick="textsize()"><i class="fa-solid fa-greater-than"></i></button></li>
+            <li>Font Family<button type="button" onclick="textfontfamily()"><i class="fa-solid fa-font"></i></button></li>
+            <!-- <button type="button" onclick=""><i class="fa-solid fa-fill-drip"></i></button> -->
+            <li>Clear All <button type="button" onclick="reset()">reset</button></li>
+        </ul>
+        </div>
+
+
+        <div class="user-text-area">
+            <input type="text" class="text-area" id="user-text">
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
