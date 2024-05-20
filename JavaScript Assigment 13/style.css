@@ -1,81 +1,95 @@
-
 body{
-    padding: 0;
     margin: 0;
-    width: 100%;
-    overflow-y: hidden;
+    padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(./assest/2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
 
 .designer{
     text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
     font-size: 15pt;
-    text-decoration: underline;
-
+    background: transparent;
 }
-
 
 .heading{
     text-align: center;
-    font-size: 30pt;
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: bold;
-
+    font-size: 30pt;
 }
 
-.container{
+.command-section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.command-panel{
+    justify-content: space-evenly;
+    /* gap: 40px; */
+    /* margin-top: 30px; */
     /* border: 2px solid black; */
-    width: 10%;
-    height: 100vh;
-    padding-right: 20px;
-    background: transparent;
-    
-}
-
-.command-panel ul{
-    list-style: none;
-    /* border: 2px soid black; */
-
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 
-.command-panel ul li {
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 10pt;
-}
-
-.command-panel ul li button{
-    height: 30px;
-    width: 50px;
-    border-radius: 20px;
+.btn{
     border: none;
-    background-color: #14e214;
+    font-size: 13pt;
+    height: 30px;
+    width: 140px;
+    /* width: max-content; */
+    border-radius: 20px;
+    font-weight: 700;
+    /* background-color: #1fe718; */
+    background-color: #000;
+    color: #fff;
 }
 
 
-.command-panel ul li button:active{
-    background-color: #0d42d4;
+.btn:active{
+    background-color: #37dd15;
+}
+
+.bt{
+    border: none;
+    font-size: 13pt;
+    height: 30px;
+    width: 140px;
+    /* width: max-content; */
+    border-radius: 20px;
+    font-weight: 700;
+    /* background-color: #1fe718; */
+    background-color: #000;
+    color: #fff;
 }
 
 
-.user-text-area{
-    width: 80%;
-    height: 100vh;
-    margin-top: 20px;
+.bt:active{
+    background-color: #37dd15;
 }
 
 
 .text-area{
-    width: 80%;
-    height: 500px;
-    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+    
 }
+
+
+.input{
+    background: transparent;
+    height: 400px;
+    width: 900px;
+}
+
