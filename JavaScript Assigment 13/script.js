@@ -2,6 +2,9 @@
 
 var user_input = document.getElementById('userinput');
 var command_btn = document.getElementsByClassName('btn');
+var font_family = document.getElementById('font-family');
+var size = document.getElementById('font-size');
+var font_colour = document.getElementById('colour');
 
 
 for(i = 0 ; i < command_btn.length ; i++){
@@ -69,8 +72,6 @@ for(i = 0 ; i < command_btn.length ; i++){
 }
 
 
-var font_family = document.getElementById('font-family');
-var size = document.getElementById('font-size');
 
 
 font_family.addEventListener('change' , function(){
@@ -142,4 +143,51 @@ size.addEventListener('change' , function(){
     }
 })
 
+font_colour.addEventListener('change' , function(){
+    if(this.value == 'red'){
+        user_input.style.color = 'red'
+    }
 
+    if(this.value == 'blue'){
+        user_input.style.color = 'blue'
+    }
+    if(this.value == 'green'){
+        user_input.style.color = 'green'
+    }
+    if(this.value == 'yellow'){
+        user_input.style.color = 'yellow'
+    }
+    if(this.value == 'aqua'){
+        user_input.style.color = 'aqua'
+    }
+    if(this.value == 'orange'){
+        user_input.style.color = 'orange'
+    }
+    if(this.value == 'white'){
+        user_input.style.color = 'white'
+    }
+    if(this.value == 'black'){
+        user_input.style.color = 'black'
+    }
+    if(this.value == 'oranged'){
+        user_input.style.color = 'orangered'
+    }
+    if(this.value == 'brown'){
+        user_input.style.color = 'brown'
+    }
+    if(this.value == 'bisque'){
+        user_input.style.color = 'bisque'
+    }
+    if(this.value == 'aquamarine'){
+        user_input.style.color = 'aquamarine'
+    }
+    if(this.value == 'blueviolet'){
+        user_input.style.color = 'blueviolet'
+    }
+    if(this.value == 'purple'){
+        user_input.style.color = 'purple'
+    }
+    if(this.value == 'pink'){
+        user_input.style.color = 'pink'
+    }
+})
