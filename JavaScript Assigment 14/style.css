@@ -12,6 +12,17 @@ body {
     margin: 0;
 }
 
+
+.designer{
+    display: grid;
+    place-items: top;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16pt;
+    background: transparent;
+}
+
 .container {
     background: transparent;
     padding: 20px;
