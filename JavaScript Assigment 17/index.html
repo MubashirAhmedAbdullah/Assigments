@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Lister</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login_form_container" id="login_form_container">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <h3>Login Here</h3>
+    
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+    
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+    
+            <button onclick="userlogin()">Log In</button>
+            <div class="social">
+              <div class="go"><i class="fab fa-google"></i>  Google</div>
+              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="todolister_container" id="todolister_container">
+        <div class="info_section">
+            <div class="user_name">
+                Current User id => <span id="user_id">admin@gmail.com</span>
+            </div>
+            <div class="logout_btn">
+                <button type="button" onclick="logoutuser()">Log Out</button>
+            </div>
+        </div>
+
+
+        <div class="todos">
+            <textarea class="todo" id="todo" cols="50" rows="2" placeholder="Add your text here"></textarea>
+
+            <div class="add_butt">
+                <button type="button" class="Add" onclick="addnotes()">Add Notes</button>
+            </div>
+        </div>
+
+
+        <div class="list">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
