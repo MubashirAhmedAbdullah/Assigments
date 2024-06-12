@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assest/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  
+  .designer {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    font-size: 17pt;
+    font-style: italic;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: transparent;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .todos_input_field{
+    display: flex;
+    /* place-items: center; */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .filter_dropdown{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 15pt ;
+  }
+
+
+  .todos_input_field input{
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15pt;
+    border: none;
+  }
+
+  .category_dropdown{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 15pt ;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    min-width: 600px;
+
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 15pt;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 20pt;
+  }
+
+  .table-data{
+    overflow-y: scroll;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17pt;
+  }
+  
+  button:hover {
+    background-color: #4572a0;
+  }
+  
+  @media (max-width: 600px) {
+    th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
+  }

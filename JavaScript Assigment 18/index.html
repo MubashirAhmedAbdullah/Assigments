@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="designer">DESIGN BY MUBASHIR AHMED</div>
+    <div class="container">
+        <h1> To Do Lister</h1>
+        <div class="todos_input_field" id="todos_input_field">
+            <div class="filter">
+                <select id="filter_dropdown" class="filter_dropdown">
+                    <option value="Filter">Filter</option>
+                    <option value="Homework">Homework</option>
+                    <option value="Exams">Exams</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Extracurricular Activities">Extracurricular Activities</option>
+                    <option value="Personal">Personal</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Add Your To Do's">
+            <div class="category" id="category">
+                <select id="category_dropdown" class="category_dropdown">
+                    <option value="Homework">Homework</option>
+                    <option value="Exams">Exams</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Extracurricular Activities">Extracurricular Activities</option>
+                    <option value="Personal">Personal</option>
+                </select>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table id="todos_table">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>To Do's</th>
+                        <th>Category</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="todo's">
+                   
+                </tbody>
+            </table>
+        </div>
+        <button id="addtodos">Add ToDo's</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
