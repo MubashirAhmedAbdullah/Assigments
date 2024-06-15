@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="designer">Design By Mubashir Ahmed</div>
+
+    <div class="title">
+        Babu Shoping Mart
+    </div>
+
+    <div class="container">
+       <div class="filter_and_sorting_section">
+        <div class="filter_section">
+            <select name="filter" id="filter_products">
+                <option value=">100">>100</option>
+                <option value=">200">>200</option>
+                <option value=">300">>300</option>
+                <option value=">400">>400</option>
+            </select>
+        </div>
+
+        <div class="Sort_by_letter">
+            <select name="sort_by_letter" id="sort_by_letter">
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+            </select>
+        </div>
+
+        <div class="Sort_by_categorey">
+            <select name="sort_by_categorey" id="sort_by_categorey">
+                <option value="Electronics">Men's Clothing</option>
+                <option value="Electronics">Jewelery</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Electronics">Women's Clothing</option>
+            </select>
+        </div>
+
+      </div>
+
+        <div class="product_section">
+            <div class="section_title">
+                Products
+            </div>
+
+            <div class="products">
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div id="product_list" class="flex flex-wrap -m-4">
+                       
+                      </div>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

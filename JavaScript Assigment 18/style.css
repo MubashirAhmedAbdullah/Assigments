@@ -53,6 +53,11 @@ body {
     font-size: 15pt ;
   }
 
+  .filter_dropdown select option{
+    border: none;
+    border-radius: 20px;
+  }
+
 
   .todos_input_field input{
     width: 700px;
