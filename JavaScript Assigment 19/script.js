@@ -325,7 +325,7 @@ function renderProducts(products) {
 renderProducts(products);
 
 const sort_by_alpha = document.getElementById('sort_by_alpha');
-const sort_by_price = document.getElementById('sort_by_price');
+const sort_by_price = document.getElementById('sort_by_num');
 const filtering_by_cat = document.getElementById('filtering_by_cat');
 
 sort_by_alpha.addEventListener("change", function () {
@@ -337,6 +337,12 @@ sort_by_alpha.addEventListener("change", function () {
   renderProducts(products);
 });
 
+
+filtering_by_cat.addEventListener("change", function () {
+  const filteredProducts = products.filter(product => product.category == this.value || this.value == "all");
+  renderProducts(filteredProducts);
+});
+
 sort_by_price.addEventListener("change", function () {
   if (this.value == "low-high") {
       products.sort((a, b) => a.price - b.price);
@@ -344,9 +350,4 @@ sort_by_price.addEventListener("change", function () {
       products.sort((a, b) => b.price - a.price);
   }
   renderProducts(products);
-});
-
-filtering_by_cat.addEventListener("change", function () {
-  const filteredProducts = products.filter(product => product.category == this.value || this.value == "all");
-  renderProducts(filteredProducts);
 });

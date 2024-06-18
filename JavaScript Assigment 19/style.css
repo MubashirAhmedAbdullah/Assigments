@@ -64,7 +64,7 @@ body{
 
 .sorting_by_alphabet select , .sorting_by_price select, .filtering-by-category select{
     height: 40px;
-    width: 170px;
+    width: 190px;
     font-size: 15pt;
     font-weight: bold;
     border-radius: 20px;
