@@ -1,99 +1,90 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: 'Times New Roman', Times, serif;
+@font-face {
+    font-family: 'playnz';
+    src: url('./assets/fonts/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf');
 }
 
-*{
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'nzregular';
+    src: url('./assets/fonts/Playwrite_NZ/static/PlaywriteNZ-Regular.ttf');
 }
 
-.designer{
-    text-align: center;
-    font-size: 17pt;
-    font-style: italic;
-    font-weight: 500;
+@font-face {
+    font-family: 'nztin';
+    src: url('./assets/fonts/Playwrite_NZ/static/PlaywriteNZ-Thin.ttf');
 }
 
-.title{
-    font-size: 40pt;
-    font-weight: 700;
-    /* margin-left: 30px; */
-    /* padding-left: 30px; */
-    margin-top: 20px;
-    color: rgb(16, 191, 16);
-    width: 100%;
-    border-bottom: 5px solid black;
-    text-align: center;
+@font-face {
+    font-family: 'Autasregular';
+    src: url('./assets/fonts/Playwrite_AU_TAS/static/PlaywriteAUTAS-Regular.ttf');
 }
 
-.container{
-    width: 100%;
+@font-face {
+    font-family: 'autas';
+    src: url('./assets/fonts/Playwrite_AU_TAS/PlaywriteAUTAS-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'autastin';
+    src: url('./assets/fonts/Playwrite_AU_TAS/static/PlaywriteAUTAS-Thin.ttf');
+}
+
+
+html,body{
     height: 100vh;
-    
-}
-
-.filter_and_sorting_section{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 30px;
     width: 100%;
-    /* border: 2px solid black; */
-    margin-left: 100px;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
-
-.filter_section select{
-    height: 30px;
-    width: 200px;
-    text-align: center;
-    font-weight: 500;
-    /* font-style: italic; */
-    border-radius: 20px;
-    font-size: 15pt;
-    border: 2px solid black;
-}
-
-.Sort_by_letter select{
-    height: 30px;
-    width: 200px;
-    text-align: center;
-    font-weight: 500;
-    /* font-style: italic; */
-    border-radius: 20px;
-    border: 2px solid black;
-    font-size: 15pt;
-}
-
-
-.Sort_by_categorey select{
-    height: 30px;
-    width: 200px;
-    text-align: center;
-    font-weight: 500;
-    /* font-style: italic; */
-    border-radius: 20px;
-    border: 2px solid black;
-    font-size: 15pt;
-}
-
-.product_section{
-    margin-top: 30px;
-    padding: 0 30px 0 30px;
-}
-
-
-.section_title{
-    font-size: 35pt;
-    color: rgb(23, 204, 23);
-    font-weight: 600;
-}
-
-
-
-/* .products{
-    padding-left: 200px;
+/* 
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 } */
+
+
+.designer {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 35pt;
+    color: #06D001;
+    font-family: 'playnz';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 5px solid #06D001;
+}
+
+.sorting_by_alphabet select , .sorting_by_price select, .filtering-by-category select{
+    height: 40px;
+    width: 170px;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .designer {
+        font-size: 12pt;
+    }
+
+    .title{
+        font-size: 20pt;
+        padding-top: 15px;
+    }
+
+    .product-list{
+        margin: 0;
+    }
+}

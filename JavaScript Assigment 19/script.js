@@ -243,85 +243,110 @@ var products = [
     }
   ]
 
-  var list = document.getElementById('product_list');
-  list.innerHTML = ""
 
-  products.forEach(function(data, ind){
-    var element = ` <div class="p-4 md:w-1/3">
-    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${data.image}" alt="blog">
-      <div class="p-6">
-        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${data.category}</h2>
-        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">${data.title}</h1>
-        <p class="leading-relaxed mb-3">${data.description}</p>
-        <div class="flex items-center flex-wrap ">
-          <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-          
-            </svg style="font-size: 30pt;">$${data.price}
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>`
+//   const products_list = document.getElementById('product_list');
+//   products_list.innerHTML = '';
 
 
-  list.innerHTML += element;
+//   products.forEach(function(data, ind){
+//     const element = `<div class="p-4 md:w-1/4 product-data">
+//     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+//       <img class="lg:h-48 md:h-36 w-full object-cover" src="${data.image}" alt="blog">
+//       <div class="p-6">
+//         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${data.category}</h2>
+//         <h1 class="title-font text-lg font-medium text-gray-900 mb-3">${data.title}</h1>
+//         <p class="leading-relaxed mb-3">${data.description}</p>
+//         <div class="flex items-center flex-wrap justify-between">
+//           <div class="span">Price</div>
+//           <div class="rate">$${data.price}</div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>`
 
-  });
+//   products_list.innerHTML += element ;
+//   })
+
+
+
+//   const sort_by_alpha = document.getElementById('sort_by_alpha');
+//   const sort_by_price = document.getElementById('sort_by_price');
+//   const filtering_by_cat = document.getElementById('filtering_by_cat');
+
+
+
+//   // sort_by_alpha.addEventListener("change", function () {
+//   //   console.log(this.value);
+//   //   if (this.value == "A-Z") {
+//   //     products.sort((a, b) => (a.title > b.title ? 1 : -1));
+//   //   } else if(this.value == "Z-A") {
+//   //     console.log("else chal raha he");
+//   //     products.sort((a, b) => (a.title > b.title ? -1 : 1));
+//   //   }
+  
+//   //   products_list.innerHTML = "";
+//   //   products.forEach((data) => {
+//   //     var productitem = createElement(data.image, data.category, data.title, data.description, data.price);
+//   //     products_list.innerHTML += productitem;
+//   //   });
+//   // });
+
+
+
   
 
+const products_list = document.getElementById('product_list');
 
-  // script.js
+function createProductElement(data) {
+  return `
+      <div class="p-4 md:w-1/4 product-data">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover" src="${data.image}" alt="product">
+              <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${data.category}</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">${data.title}</h1>
+                  <p class="leading-relaxed mb-3">${data.description}</p>
+                  <div class="flex items-center flex-wrap justify-between">
+                      <div class="span">Price</div>
+                      <div class="rate">$${data.price}</div>
+                  </div>
+              </div>
+          </div>
+      </div>`;
+}
 
-// Get all HTML elements
-const filterProductsSelect = document.getElementById('filter_products');
-const sortByLetterSelect = document.getElementById('sort_by_letter');
-const sortByCategorySelect = document.getElementById('sort_by_categorey');
-const productListContainer = document.getElementById('product_list');
+function renderProducts(products) {
+  products_list.innerHTML = '';
+  products.forEach((data) => {
+      products_list.innerHTML += createProductElement(data);
+  });
+}
 
-// Sample product data (replace with your actual data)
-// const products = [
-//   { id: 1, name: 'Product A', price: 150, category: 'Electronics' },
-//   { id: 2, name: 'Product B', price: 250, category: 'Men\'s Clothing' },
-//   { id: 3, name: 'Product C', price: 350, category: 'Jewelery' },
-//   { id: 4, name: 'Product D', price: 450, category: 'Women\'s Clothing' },
-//   { id: 5, name: 'Product E', price: 550, category: 'Electronics' },
-//   // Add more products here...
-// ];
-
-
-
-// Filter products by price
-filterProductsSelect.addEventListener('change', (e) => {
-  const selectedPrice = e.target.value;
-  const filteredProducts = products.filter((product) => product.price > parseInt(selectedPrice));
-  renderProducts(filteredProducts);
-});
-
-// Sort products by letter
-sortByLetterSelect.addEventListener('change', (e) => {
-  const selectedSort = e.target.value;
-  let sortedProducts;
-  if (selectedSort === 'A-Z') {
-    sortedProducts = products.sort((a, b) => a.name.localeCompare(b.name));
-  } else {
-    sortedProducts = products.sort((a, b) => b.name.localeCompare(a.name));
-  }
-  renderProducts(sortedProducts);
-});
-
-// Sort products by category
-sortByCategorySelect.addEventListener('change', (e) => {
-  const selectedCategory = e.target.value;
-  const filteredProducts = products.filter((product) => product.category === selectedCategory);
-  renderProducts(filteredProducts);
-});
-
-// Initial render of products
 renderProducts(products);
+
+const sort_by_alpha = document.getElementById('sort_by_alpha');
+const sort_by_price = document.getElementById('sort_by_price');
+const filtering_by_cat = document.getElementById('filtering_by_cat');
+
+sort_by_alpha.addEventListener("change", function () {
+  if (this.value == "A-Z") {
+      products.sort((a, b) => (a.title > b.title ? 1 : -1));
+  } else if (this.value == "Z-A") {
+      products.sort((a, b) => (a.title > b.title ? -1 : 1));
+  }
+  renderProducts(products);
+});
+
+sort_by_price.addEventListener("change", function () {
+  if (this.value == "low-high") {
+      products.sort((a, b) => a.price - b.price);
+  } else if (this.value == "high-low") {
+      products.sort((a, b) => b.price - a.price);
+  }
+  renderProducts(products);
+});
+
+filtering_by_cat.addEventListener("change", function () {
+  const filteredProducts = products.filter(product => product.category == this.value || this.value == "all");
+  renderProducts(filteredProducts);
+});
