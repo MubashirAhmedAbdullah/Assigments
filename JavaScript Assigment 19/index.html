@@ -6,57 +6,48 @@
     <title>Hashir Mart</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="designer">Design By Mubashir Ahmed</div>
 
-    <div class="logo_title">
-        <div class="title">
-            HASHIR MART
-        </div>
+
+    <div class="title">Hashir Mart</div>
+
+    <div class="filter-and-sorting-div">
+        <div class="filter-div">
+        <label for="category">Filter by Category:</label>
+        <select id="category" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">Electronics</option>
+        </select>
+      </div>
+
+
+
+      <div class="sorting-div">
+      <label for="sort">Sort by:</label>
+        <select id="sort" onchange="sortProducts()">
+            <option value="alphabet">Alphabet</option>
+            <option value="price">Price</option>
+        </select>
+      </div>
     </div>
 
-    <div class="section_and_filtering_div flex justify-evenly w-full pt-4">
-        <div class="sorting_by_alphabet">
-            <select name="sort" id="sort_by_alpha">
-                <option value="">Sort</option>
-                <option value="a-z">A-Z</option>
-                <option value="z-a">Z-A</option>
-            </select>
-        </div>
-
-
-        <div class="filtering-by-category">
-            <select name="filtering" id="filtering_by_cat">
-                <option value="">Filter</option>
-                <option value="men's clothing">men's clothing</option>
-                <option value="jewelery">jewelery</option>
-                <option value="electronics">electronics</option>
-                <option value="women's clothing">women's clothing</option>
-            </select>
-        </div>
-
-
-
-        <div class="sorting_by_price">
-            <select name="sort-by-number" id="sort_by_num">
-                <option value="">Sort</option>
-                <option value="a-z">High-Low</option>
-                <option value="z-a">Low-High</option>
-            </select>
-        </div>
-    </div>
 
     <div class="container">
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto ml-20 product-list">
-              <div class="flex flex-wrap -m-4" id="product_list">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4" id="products_list">
                 
               </div>
             </div>
           </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
