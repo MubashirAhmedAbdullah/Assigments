@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <main>
+        <section class="select-city">
+            <label for="city">Select a city: </label>
+            <select id="city">
+                <option value="Makkah al Mukarramah">Makkah al Mukarramah</option>
+                <option value="Medina">Medina</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Beijing">Beijing</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Seoul">Seoul</option>
+                <option value="Manila">Manila</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Hanoi">Hanoi</option>
+                <option value="Yangon">Yangon</option>
+                <option value="Taipei">Taipei</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="Tehran">Tehran</option>
+                <option value="Baghdad">Baghdad</option>
+                <option value="Riyadh">Riyadh</option>
+                <option value="Jerusalem">Jerusalem</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Multan">Multan</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Gujranwala">Gujranwala</option>
+                <option value="Sargodha">Sargodha</option>
+                <option value="Bahawalpur">Bahawalpur</option>
+                <option value="Sukkur">Sukkur</option>
+                <option value="Larkana">Larkana</option>
+                <option value="Sheikhupura">Sheikhupura</option>
+                <option value="Jhang">Jhang</option>
+                <option value="Sahiwal">Sahiwal</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mardan">Mardan</option>
+                <option value="Kasur">Kasur</option>
+            </select>
+        </section>
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <div class="weather-icon" id="weather-icon">&#9728;</div>
+                <div class="weather-details">
+                    <h3 id="weather-description">Clear Sky</h3>
+                    <p class="temperature" id="temperature">38.6°C</p>
+                    <p>Feels like: <span class="feels-like" id="feels-like">39.8°C</span></p>
+                    <p>Min Temperature: <span class="min-temp" id="min-temp">38.6°C</span></p>
+                    <p>Humidity: <span class="humidity" id="humidity">28%</span></p>
+                    <p>Pressure: <span class="pressure" id="pressure">1001 hPa</span></p>
+                    <p>Wind: <span class="wind-speed" id="wind-speed">4.47 km/h</span> <span class="wind-condition"
+                            id="wind-direction">NW</span></p>
+                    <p>Visibility: <span class="visibility" id="visibility">10 km</span></p>
+                    <p>Cloudiness: <span class="cloudiness" id="cloudiness">3%</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Design BY Mubashir Ahmed</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
