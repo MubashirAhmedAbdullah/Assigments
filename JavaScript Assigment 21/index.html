@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBase Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-and-signup-form-container" id="login-and-signup-form-container">
+
+        <body>
+            <div class="container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <input type="email" id="signup_email" placeholder="Email" required />
+                        <input type="password" id="signup_password" placeholder="Password" required />
+                        <button id="signup_btn">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <input type="email" id="login_email" placeholder="Email" required />
+                        <input type="password" id="login_password" placeholder="Password" required />
+                        <button id="login_btn">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+
+    <div class="hashir-mart-container" id="hashir-mart-container">
+
+        <header>
+            <div class="logout-btn-user-info-field">
+                <!-- <div class="user-info-field">
+                    <p id="user-info">Welcome <span id="user-name"></span></p>
+                </div> -->
+                <button class="logout-btn" id="logout_btn">Logout</button>
+            </div>
+            <div class="hashir_mart">
+                <h1>HASHIR-MART</h1>
+            </div>
+            <div class="filters">
+                <label for="filter">Filter by price:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-150">$100 - $150</option>
+                </select>
+
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <div class="products">
+                <div class="product" data-price="30">
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnR8ZW58MHx8MHx8fDA%3D" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p>$30</p>
+                </div>
+                <div class="product" data-price="70">
+                    <img src="https://images.unsplash.com/photo-1656428852088-dc40d6c76885?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGp3ZWxsZXJ5fGVufDB8fDB8fHww" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p>$70</p>
+                </div>
+                <div class="product" data-price="110">
+                    <img src="https://images.unsplash.com/photo-1656428361267-b309fd9b20f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGp3ZWxsZXJ5fGVufDB8fDB8fHww" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p>$110</p>
+                </div>
+                <div class="product" data-price="45">
+                    <img src="https://plus.unsplash.com/premium_photo-1661778819475-b5b784b18d09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVkJTIwdHZ8ZW58MHx8MHx8fDA%3D" alt="Product 4">
+                    <h2>Product 4</h2>
+                    <p>$45</p>
+                </div>
+                <div class="product" data-price="90">
+                    <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGFyZCUyMGRpc2t8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h2>Product 5</h2>
+                    <p>$90</p>
+                </div>
+                <div class="product" data-price="120">
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww" alt="Product 6">
+                    <h2>Product 6</h2>
+                    <p>$120</p>
+                </div>
+                <div class="product" data-price="50">
+                    <img src="https://images.unsplash.com/photo-1624701928517-44c8ac49d93c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8R1BVfGVufDB8fDB8fHww" alt="Product 7">
+                    <h2>Product 7</h2>
+                    <p>$50</p>
+                </div>
+                <div class="product" data-price="150">
+                    <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c29mYXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 8">
+                    <h2>Product 8</h2>
+                    <p>$150</p>
+                </div>
+                <div class="product" data-price="35">
+                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNvZmF8ZW58MHx8MHx8fDA%3D" alt="Product 9">
+                    <h2>Product 9</h2>
+                    <p>$35</p>
+                </div>
+                <div class="product" data-price="85">
+                    <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdG9yc3xlbnwwfHwwfHx8MA%3D%3D" alt="Product 10">
+                    <h2>Product 10</h2>
+                    <p>$85</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="script.js" type="module"></script>
+
+</html>
