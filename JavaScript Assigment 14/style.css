@@ -1,93 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4; */
-    background-image: url(./assest/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
     height: 100vh;
+    background: linear-gradient(90deg, #37ced3, #3866e2);
+}
+
+*{
+    padding: 0;
     margin: 0;
 }
 
-.container {
-    background: transparent;
-    padding: 20px;
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    width: 300px;
+.designer{
     text-align: center;
+    font-weight: 700;
+    font-size: 17pt;
+
 }
 
-.container:hover{
-    box-shadow: 0 0 20px black;
+
+
+.header{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    line-height: 40px;
 }
 
-h1 {
-    margin: 0 0 20px;
+.header h1{
+    font-size: 30pt;
 }
 
-#taskInput {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.header h2{
+    font-size: 23pt;
 }
 
-#addTaskButton {
-    padding: 10px 20px;
+.toDoInputField{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+
+#todoInputField{
     border: none;
-    background: #28a745;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 15pt;
+    text-align: center;
+
 }
 
-#addTaskButton:hover {
-    background: #218838;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
+/* .toDoInputField{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    justify-content: center;
+} */
 
-button.edit, button.delete {
+.addButton{
+    display: block;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
     border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #18d111;
+    color: white;
+    font-size: 14.5pt;
+    margin-top: 10px;
+    
 }
 
-button.edit {
-    background: #ffc107;
-    color: #fff;
+.todo-display-field-div{
+    height: 100vh;
+    width: 80%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-button.edit:hover {
-    background: #e0a800;
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 5%;
+    font-size: 15pt;
+    font-weight: 700;
 }
 
-button.delete {
-    background: #dc3545;
-    color: #fff;
-}
+th {
+    background-color: #f0f0f0;
+  }
 
-button.delete:hover {
-    background: #c82333;
-}
+

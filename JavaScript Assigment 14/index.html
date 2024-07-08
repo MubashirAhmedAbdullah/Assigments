@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do Lister</title>
+    <title>To Do Lister</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task...">
-        <button id="addTaskButton">Add Task</button>
-        <ul id="taskList"></ul>
+
+    <div class="conatainer">
+        <div class="designer">Design By Mubashir Ahmed</div>
+        <div class="header">
+            <h1>To Do Lister</h1>
+            <h2>Make your life easier</h2>
+
+        </div>
+        <div class="todo-input-and-display-add-container">
+            <div class="toDoInputField">
+                <input type="text" id="todoInputField" placeholder="Enter your task here">
+                <button class="addButton" id="addButton">Add Task</button>
+            </div>
+        </div>
+
+
+        <div class="todo-display-field-div">
+            <table>
+                <thead>
+                    <tr>
+                        <td>TASK</td>
+                        <td>CREATED DATE
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
+
 </html>
