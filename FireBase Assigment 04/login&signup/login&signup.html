@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Manager and Orginizer</title>
+    <link rel="stylesheet" href="login&signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <input type="file"  required id="profile">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="number" placeholder="Phone" required> 
+                <button type="button" id="signup_btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <!-- <a href="#">Forgot your password?</a> -->
+                <button type="button" id="signin_btn">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us with better experience</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script type="module" src="login&signup.js"></script>
+</html>
