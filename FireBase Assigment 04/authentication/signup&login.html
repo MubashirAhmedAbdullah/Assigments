@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashir Mart</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form action="#" id="signup_form">
+                <h1>Create Account</h1>
+                <input type="file" placeholder="Profile">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="number" placeholder="Phone Number" maxlength="11">
+                <input type="email" placeholder="Email Address" >
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button id="sign_up-btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <!-- <a href="#">Forgot your password?</a> -->
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us with better experience</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    const signInButton = document.getElementById('signIn');
+        const signUpButton = document.getElementById('signUp');
+        const container = document.querySelector('.container');
+        
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+        
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+        </script>
+</body>
+<script type="module" src="authentication.js"></script>
+</html>
