@@ -10,8 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #0f0f0f;
-    /* Attractive purple color */
+    background-color: #0f0f0f; /* Attractive purple color */
     color: white;
     padding: 1rem 0;
     position: relative;
@@ -35,16 +34,15 @@ body {
 }
 
 .logo:hover {
-    color: #ffffff;
-    /* Brighter white for hover effect */
+    color: #ffffff; /* Brighter white for hover effect */
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    padding-top: 10px;
     align-items: center;
+    padding-top: 10px;
 }
 
 .nav-links li {
@@ -65,8 +63,7 @@ body {
     width: 0;
     height: 2px;
     display: block;
-    background: white;
-    /* White underline for hover effect */
+    background: white; /* White underline for hover effect */
     transition: width 0.3s;
     bottom: -5px;
     left: 50%;
@@ -78,8 +75,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #d1c4e9;
-    /* Light purple for hover effect */
+    color: #d1c4e9; /* Light purple for hover effect */
 }
 
 .menu-icon {
@@ -93,16 +89,16 @@ body {
 }
 
 
-.home-product-rendering {
+.home-product-rendering{
     height: max-content;
     width: 100%;
     border: 2px solid black;
-    background-image: url(./assest/61CiqVTRBEL._SX3000_.jpg);
+    background-image: url(../assest/61CiqVTRBEL._SX3000_.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.prdouct_box {
+.prdouct_box{
     font-family: Arial, sans-serif;
     /* background-color: #f8f8f8; */
     display: flex;
@@ -124,54 +120,60 @@ body {
     transition: transform 0.3s ease;
 }
 
-
-.product-container {
-    width: 100%;
-    max-width: 250px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    height: max-content;
+.product-card:hover {
+    transform: scale(1.05);
 }
 
-.product-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 15px;
     text-align: center;
 }
 
-.product-image {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.product-details {
-    width: 100%;
-}
-
-.product-name {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.product-description {
-    margin-bottom: 15px;
-    color: #555;
-    font-size: 16px;
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .product-price {
-    margin-bottom: 10px;
-    color: #007bff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    color: #b12704;
+    margin: 5px 0;
+}
+
+.product-rating {
+    margin: 10px 0;
+}
+
+.product-rating span {
+    color: #ffb400;
+    font-size: 16px;
+}
+
+.rating-count {
+    color: #555;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: #ffa41c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff8c00;
 }
 
 #logout-btn {
@@ -184,44 +186,12 @@ body {
     background: #da0c0c;
 }
 
-#logout-btn:hover {
-    background-color: #10df10;
-    transition: 0.5s ease-in-out;
-}
-
-.product-category {
-    color: #777;
-    font-size: 14px;
-}
 
 #profile:hover {
     border-radius: 50%;
     box-shadow: 0 0 0 3px #fff;
 
 }
-
-@media (max-width: 600px) {
-    .product-container {
-        padding: 15px;
-    }
-
-    .product-name {
-        font-size: 20px;
-    }
-
-    .product-description {
-        font-size: 14px;
-    }
-
-    .product-price {
-        font-size: 16px;
-    }
-
-    .product-category {
-        font-size: 12px;
-    }
-}
-
 
 
 @media (max-width: 768px) {
@@ -250,12 +220,11 @@ body {
         display: block;
     }
 
-    #menu-toggle:checked+.menu-icon+.nav-links {
-        max-height: 500px;
-        /* Adjust based on the number of items */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        max-height: 500px; /* Adjust based on the number of items */
     }
 
-    .prdouct_box {
+    .prdouct_box{
         flex-basis: auto;
         margin-top: 300px;
     }

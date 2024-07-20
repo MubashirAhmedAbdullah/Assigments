@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansoori Mart</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form" action="#" method="post">
+            <h2>Create an Account</h2>
+            
+            <label for="userImage" class="custom-file-upload">
+                <input type="file" id="userImage" name="userImage" accept="image/*">
+                <i class="fas fa-cloud-upload-alt"></i> Upload Profile Image
+            </label>
+            
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
+            
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            
+            <button type="submit" id="sign_up">Sign Up</button>
+        </form>
+    </div>
+    
+</body>
+<script type="module" src="script.js"></script>
+</html>
