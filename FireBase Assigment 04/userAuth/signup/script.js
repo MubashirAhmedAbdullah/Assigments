@@ -33,16 +33,18 @@ sign_up_btn.addEventListener('click', () => {
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
+    const Address = document.getElementById('Address').value
     const emailAddress = document.getElementById('emailAddress').value;
     const password = document.getElementById('password').value;
 
     //creating object using these varibles value
 
     const userInfo = {
-        img: userImage,
+        img: "",
         firstName: firstName,
         lastName: lastName,
         phoneNumber: phoneNumber,
+        addrees: Address,
         email: emailAddress,
         password: password
     }
@@ -56,7 +58,7 @@ sign_up_btn.addEventListener('click', () => {
         .then((user) => {
             console.log(user.user.uid);
             // uploading user profile image to local storage
-            const userRef = ref(storage, user.user.uid);
+            const userRef = ref(storage, `user/${user.user.uid}`);
 
             uploadBytes(userRef, userImage)
                 .then(() => {
@@ -101,6 +103,7 @@ sign_up_btn.addEventListener('click', () => {
                 })
         }).catch((err) => {
             console.log(err.message);
+            alert(err.message)
             sign_up_btn.innerHTML = "Sign Up"
             sign_up_btn.disabled = false;
         })

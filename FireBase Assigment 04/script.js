@@ -14,6 +14,10 @@ logout_btn.addEventListener('click', ()=>{
         window.location.href = '/'
     })
 })
+
+profile.addEventListener('click', ()=>{
+    window.location.href = './user Profile/index.html'
+})
 onAuthStateChanged(auth, (user)=>{
     if(user){
         login_link.style.display = 'none'

@@ -20,6 +20,10 @@ logout_btn.addEventListener('click', ()=>{
             });
 })
 
+profile.addEventListener('click', ()=>{
+    window.location.href = '../user Profile/index.html'
+})
+
 
 onAuthStateChanged(auth, (user)=>{
     if(user){
