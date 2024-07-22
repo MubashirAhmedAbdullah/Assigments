@@ -68,7 +68,7 @@ function updateCurrentWeather(data) {
     const highCelsius = Math.round((highFahrenheit - 32) * 5 / 9);
     const lowFahrenheit = Math.round(data.main.temp_min);
     const lowCelsius = Math.round((lowFahrenheit - 32) * 5 / 9);
-    const wind = `${Math.round(data.wind.speed)} mph`;
+    const wind = `${Math.round(data.wind.speed)} Km/h`s;
     const humidity = `${data.main.humidity}%`;
     const uvIndex = 'N/A'; 
 

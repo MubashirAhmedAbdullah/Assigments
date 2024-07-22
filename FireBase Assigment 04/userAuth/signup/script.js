@@ -58,7 +58,7 @@ sign_up_btn.addEventListener('click', () => {
         .then((user) => {
             console.log(user.user.uid);
             // uploading user profile image to local storage
-            const userRef = ref(storage, `user/${user.user.uid}`);
+            const userRef = ref(storage, `user/${userImage}`);
 
             uploadBytes(userRef, userImage)
                 .then(() => {
