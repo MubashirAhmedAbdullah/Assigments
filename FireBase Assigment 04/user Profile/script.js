@@ -1,65 +1,69 @@
 import {
-    db,
-    getDoc,
-    doc,
-    setDoc,
-    ref,
-    storage,
-    collection,
-    updateDoc,
-    query,
     auth,
-    onAuthStateChanged
+    app,
+    analytics,
+    storage,
+    db,
+    onAuthStateChanged,
+    doc,
+    getDoc,
 } from "../utilis/utilis.js";
 
 
-console.log(storage);
-console.log(db);
-console.log(auth);
+document.addEventListener('DOMContentLoaded', () => {
+    const profileIcon = document.getElementById('profile');
+    const profileSection = document.querySelector('.profile-section');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+    // Toggle profile section visibility
+    profileIcon.addEventListener('click', () => {
+        profileSection.style.display = profileSection.style.display === 'flex' ? 'none' : 'flex';
+    });
 
-onAuthStateChanged(auth, (user) => {
-    if (user) {
+    // Toggle navbar on mobile
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+});
+
+
+const profile = document.getElementById('profile');
+const login_link = document.getElementById('login_link');
+const profile_image = document.getElementById('image');
+const name = document.getElementById('name');
+const middle_name = document.getElementById('middle-name');
+const last_name = document.getElementById('last-name');
+const email = document.getElementById('email');
+const address = document.getElementById('address');
+
+
+
+
+onAuthStateChanged(auth, (user)=>{
+    if(user){
         const uid = user.uid;
+        profile.style.display = 'none'
+        login_link.style.display = 'none'
+
+
         getUserInfo(uid);
-        console.log(uid);
-    } else {
-        console.log("no user");
     }
 })
 
 
-function getUserInfo(uid) {
 
-    const profile_pic = document.getElementById('profile-pic');
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const phone = document .getElementById('phone');
-    const address = document.getElementById('address');
-    
-    
-    //creating object using these variables
-
-    const userInfo = {
-        img : profile_pic,
-        name: name.value,
-        email: email.value,
-        phone: phone.value,
-        address: address.value,
-    }
-
-
-    const userRef = doc(db, "user", uid)
+function getUserInfo(uid){
+    const userRef = doc(db, "users", uid);
     getDoc(userRef)
-        .then((data) => {
-            console.log(data);
-            console.log(data.id);
-            console.log(data.data());
-
-            profile_pic.src = data.data()?.img;
-            name.value = data.data()?.firstName;
-            email.value = data.data()?.email;
-            phone.value = data.data()?.phoneNumber;
-            address.value = data.data()?.addrees;
-        
-        })
+    .then((data)=>{
+        console.log(data.id);
+        console.log(data.data());
+        profile_image.src = data.data()?.user_image;
+        name.value = data.data()?.name;
+        middle_name.value = data.data()?.middle_name;
+        last_name.value = data.data()?.last_name;
+        email.value = data.data()?.email;
+        address.value = data.data()?.address;
+    })
 }

@@ -30,27 +30,26 @@ import {
   getDownloadURL,
 } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyA4Le0RO3YKx1PrsFxhV0_2YnGHvLFFGCw",
-    authDomain: "e-commerce-web-e7040.firebaseapp.com",
-    projectId: "e-commerce-web-e7040",
-    storageBucket: "e-commerce-web-e7040.appspot.com",
-    messagingSenderId: "115927171395",
-    appId: "1:115927171395:web:aa67eb1f19f7b8cd54eff6",
-    measurementId: "G-70LH4JQY7B"
+    apiKey: "AIzaSyAHMW5BW5IKnQ-KZBZFaYW7x-YXNhLz6KQ",
+    authDomain: "mansoori-mart.firebaseapp.com",
+    projectId: "mansoori-mart",
+    storageBucket: "mansoori-mart.appspot.com",
+    messagingSenderId: "259375098685",
+    appId: "1:259375098685:web:acad7d2203501b0f73f354",
+    measurementId: "G-1GBHQZ61DF"
   };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
-
 const analytics = getAnalytics(app);
 
 export {
   app,
   analytics,
-  db,
   auth,
+  db,
   storage,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
@@ -70,5 +69,5 @@ export {
   arrayRemove,
   query,
   where,
-  deleteDoc
+  deleteDoc,
 };
