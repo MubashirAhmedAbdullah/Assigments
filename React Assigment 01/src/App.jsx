@@ -49,18 +49,18 @@ function App() {
         <div className="creater text-center text-2xl pt-3 underline italic font-bold">Created By Mubashir Ahmed</div>
 
         <div className="imagesRenderingContainer p-10">
-          {imagesArray.map((data, index)=>{
+          {imagesArray.map((data, index) => {
             return (
               <div className="imagesDataCards mt-5">
-            <div className="itemImage h-40">
-              <img className='itemIMG h-full w-full' src={data.imageLink} />
+                <div className="itemImage h-40">
+                  <img className='itemIMG h-full w-full' src={data.imageLink} />
 
-              <div className="imageTitle">
-                <h1 className="text-3xl font-bold p-5 text-center">{data.name}</h1>
+                  <div className="imageTitle">
+                    <h1 className="text-3xl font-bold p-5 text-center">{data.name}</h1>
+                  </div>
+                </div>
+
               </div>
-            </div>
-
-          </div>
             )
           })}
         </div>

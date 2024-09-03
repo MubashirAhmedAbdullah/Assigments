@@ -65,5 +65,8 @@ function getUserInfo(uid){
         last_name.value = data.data()?.last_name;
         email.value = data.data()?.email;
         address.value = data.data()?.address;
+    }).catch((err)=>{
+        console.log(err);
+        alert(err);
     })
 }
