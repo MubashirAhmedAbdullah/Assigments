@@ -62,17 +62,17 @@ const password = document.getElementById('password');
 const login_btn = document.getElementById('login-btn');
 
 
-login_btn.addEventListener('click', ()=>{
+login_btn.addEventListener('click', () => {
 
     console.log(email.value);
     console.log(password.value);
     signInWithEmailAndPassword(auth, email.value, password.value)
-    .then(()=>{
-        window.location.href = "../../index.html"
-        console.log("sign in sucessfully");
-    }).catch((error)=>{
-        const errorCode = error.code
-        const errorMessage = error.message
-        alert(errorMessage)
-    })
+        .then(() => {
+            window.location.href = "../../index.html"
+            console.log("sign in sucessfully");
+        }).catch((error) => {
+            const errorCode = error.code
+            const errorMessage = error.message
+            alert(errorMessage)
+        })
 })

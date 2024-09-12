@@ -6,6 +6,7 @@ import Products from './pages/products'
 import Login from './pages/login'
 import Navbar from './components/navbar'
 import ProductDetail from './pages/productDetail'
+import SignUp from './pages/signup'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/login" element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -40,8 +40,8 @@ const address = document.getElementById('address');
 
 
 
-onAuthStateChanged(auth, (user)=>{
-    if(user){
+onAuthStateChanged(auth, (user) => {
+    if (user) {
         const uid = user.uid;
         profile.style.display = 'none'
         login_link.style.display = 'none'
@@ -53,20 +53,20 @@ onAuthStateChanged(auth, (user)=>{
 
 
 
-function getUserInfo(uid){
+function getUserInfo(uid) {
     const userRef = doc(db, "users", uid);
     getDoc(userRef)
-    .then((data)=>{
-        console.log(data.id);
-        console.log(data.data());
-        profile_image.src = data.data()?.user_image;
-        name.value = data.data()?.name;
-        middle_name.value = data.data()?.middle_name;
-        last_name.value = data.data()?.last_name;
-        email.value = data.data()?.email;
-        address.value = data.data()?.address;
-    }).catch((err)=>{
-        console.log(err);
-        alert(err);
-    })
+        .then((data) => {
+            console.log(data.id);
+            console.log(data.data());
+            profile_image.src = data.data()?.profileImage
+            name.value = data.data()?.name;
+            middle_name.value = data.data()?.middle_name;
+            last_name.value = data.data()?.last_name;
+            email.value = data.data()?.email;
+            address.value = data.data()?.address;
+        }).catch((err) => {
+            console.log(err);
+            alert(err);
+        })
 }

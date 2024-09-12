@@ -95,8 +95,8 @@ function getUserInfo(uid) {
 // const add_products = document.getElementById('add-products');
 
 // add_products.addEventListener('click', () => {
-    
-    
+
+
 //     add_products.disabled = true;
 //     add_products.innerHTML = "Creating Your Product...."
 

@@ -41,7 +41,8 @@ nav {
 
 .nav-links li {
     margin: 0 1rem;
-    position: relative; /* Added for dropdown positioning */
+    position: relative;
+    /* Added for dropdown positioning */
 }
 
 .nav-links a {
@@ -68,7 +69,8 @@ nav {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 10; /* Ensure it's above other elements */
+    z-index: 10;
+    /* Ensure it's above other elements */
 }
 
 .bar {
@@ -88,14 +90,16 @@ nav {
     height: 200px;
     width: 300px;
     border-radius: 10px;
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 40px;
     right: 0;
-    z-index: 5; /* Ensure it's above other elements */
+    z-index: 5;
+    /* Ensure it's above other elements */
     padding: 1rem;
 }
 
@@ -123,18 +127,19 @@ nav {
 .profile-section-buttons:hover {
     background: #d98a2a;
 }
+
 .profile-section-buttons a:hover {
     background: #d98a2a;
 }
 
-.profile-img{
+.profile-img {
     /* border: 2px solid black; */
     height: 90px;
     width: 90px;
     border-radius: 50%;
 }
 
-.profile-img img{
+.profile-img img {
     height: 85px;
     width: 85px;
     border-radius: 50%;
@@ -301,7 +306,8 @@ footer p {
     }
 
     .nav-links.active {
-        max-height: 300px; /* Adjust as needed */
+        max-height: 300px;
+        /* Adjust as needed */
     }
 
     .nav-links li {

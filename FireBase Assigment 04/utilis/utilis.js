@@ -30,14 +30,14 @@ import {
   getDownloadURL,
 } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyAHMW5BW5IKnQ-KZBZFaYW7x-YXNhLz6KQ",
-    authDomain: "mansoori-mart.firebaseapp.com",
-    projectId: "mansoori-mart",
-    storageBucket: "mansoori-mart.appspot.com",
-    messagingSenderId: "259375098685",
-    appId: "1:259375098685:web:acad7d2203501b0f73f354",
-    measurementId: "G-1GBHQZ61DF"
-  };
+  apiKey: "AIzaSyDLH0tPNIdpbBKb_bVySkpkPWH34lZcVnA",
+  authDomain: "blogging-app-92bb7.firebaseapp.com",
+  projectId: "blogging-app-92bb7",
+  storageBucket: "blogging-app-92bb7.appspot.com",
+  messagingSenderId: "134652144995",
+  appId: "1:134652144995:web:ce36dbc28af56ac2f13756",
+  measurementId: "G-SZD9HS1L4W"
+};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

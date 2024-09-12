@@ -135,13 +135,15 @@ logout_btn.addEventListener('click', () => {
 });
 
 
+
 function getUserInfo(uid) {
     const userRef = doc(db, "users", uid);
     getDoc(userRef)
         .then((data) => {
             console.log(data.data());
             console.log(data.id);
-            profile_images.src = data.data()?.user_image;
+            profile_images.src = data.data()?.profileImage;
+            const userNAme = document.getElementById('userNAme').innerHTML = data.data()?.name;
         })
 }
 
@@ -151,12 +153,12 @@ function getUserInfo(uid) {
 const product_conatiner = document.getElementById('product_conatiner');
 
 async function getAllProducts() {
-    try{
+    try {
         const querySnapshot = await getDocs(collection(db, "products"));
         console.log(querySnapshot);
         product_conatiner.innerHTML = ''
 
-        querySnapshot.forEach((doc)=>{
+        querySnapshot.forEach((doc) => {
             const docID = doc.id;
             const docData = doc.data();
 
@@ -168,7 +170,7 @@ async function getAllProducts() {
 
             console.log(allProducts);
 
-            const {product_price, product_name, product_image, product_description, product_category} = allProducts
+            const { product_price, product_name, product_image, product_description, product_category } = allProducts
 
 
             const product_cards = `<div class="feature-item">
@@ -183,8 +185,8 @@ async function getAllProducts() {
 
             console.log(allProducts);
         })
-            
-    }catch(err) {
+
+    } catch (err) {
         console.log("error");
         alert(err)
     }

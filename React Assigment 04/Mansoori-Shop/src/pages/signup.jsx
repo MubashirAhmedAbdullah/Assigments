@@ -1,14 +1,10 @@
 
-import { Link } from "react-router-dom";
 
 
-function Login() {
-
-
-  
-  return (
-    <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+function SignUp(){
+    return(
+        <>
+         <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
           <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
           <form>
@@ -58,10 +54,10 @@ function Login() {
           </form>
         </div>
       </div>
-      
-    </>
-  )
+        </>
+    )
 }
 
 
-export default Login;
+
+export default SignUp;

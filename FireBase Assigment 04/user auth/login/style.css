@@ -61,7 +61,8 @@ nav {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 10; /* Ensure it's above other elements */
+    z-index: 10;
+    /* Ensure it's above other elements */
 }
 
 .bar {
@@ -176,7 +177,8 @@ footer p {
     }
 
     .nav-links.active {
-        max-height: 300px; /* Adjust as needed */
+        max-height: 300px;
+        /* Adjust as needed */
     }
 
     .nav-links li {
