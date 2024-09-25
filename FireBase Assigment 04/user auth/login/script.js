@@ -16,12 +16,12 @@ import {
 //         navLinks.classList.toggle('active');
 //     });
 
-//     // Carousel functionality
-//     function showNextSlide() {
-//         carouselSlides[currentSlide].classList.remove('active');
-//         currentSlide = (currentSlide + 1) % carouselSlides.length;
-//         carouselSlides[currentSlide].classList.add('active');
-//     }
+    // Carousel functionality
+    // function showNextSlide() {
+    //     carouselSlides[currentSlide].classList.remove('active');
+    //     currentSlide = (currentSlide + 1) % carouselSlides.length;
+    //     carouselSlides[currentSlide].classList.add('active');
+    // }
 
 //     // Initialize the first slide as active
 //     carouselSlides[currentSlide].classList.add('active');
