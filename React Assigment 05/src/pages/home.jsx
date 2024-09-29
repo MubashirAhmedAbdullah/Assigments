@@ -14,14 +14,7 @@ function Home() {
                     Our Best Products
                 </h1>
                 <div className="flex flex-wrap p-5 gap-2">
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
+                
                 </div>
             </div>
             <Features />

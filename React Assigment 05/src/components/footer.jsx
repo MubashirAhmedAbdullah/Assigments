@@ -1,5 +1,6 @@
 import React from 'react';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined, CreditCardOutlined, RocketOutlined, UndoOutlined, PhoneOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,11 +14,11 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6">
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="list-none">
-              <li className="mb-2"><a href="#" className="hover:text-white">Home</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Products</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">User Products</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Cart</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Login</a></li>
+              <Link to={'/'}><li className="mb-2 hover:text-white">Home</li></Link>
+              <Link to={'/products'}><li className="mb-2 hover:text-white">Products</li></Link>
+              <Link to={'/'}><li className="mb-2 hover:text-white">User Products</li></Link>
+              <Link to={'/cart'}><li className="mb-2 hover:text-white">Cart</li></Link>
+              <Link to={'/Auth'}><li className="mb-2 hover:text-white">Login</li></Link>
             </ul>
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6">

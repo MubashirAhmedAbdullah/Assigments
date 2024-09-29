@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 587px) {
+    .titleName{
+        display: none;
+    }
+
+    .searchBar{
+        display: none;
+    }
+
+    .container{
+        margin-left: 30px;
+    }
+}
