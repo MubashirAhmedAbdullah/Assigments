@@ -1,4 +1,6 @@
 import { FacebookOutlined, GithubOutlined, GoogleOutlined } from "@ant-design/icons";
+import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TextField } from "@mui/material";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
@@ -29,7 +31,7 @@ function Auth() {
                 <div className="flex flex-col gap-2 p-5">
                     <Button icon={<GoogleOutlined />} className="font-semibold text-lg w-72 h-10 bg-yellow-400">Log In with Google</Button>
                     <Button icon={<FacebookOutlined />} className="font-semibold text-lg w-72 h-10 bg-blue-600">Log In with Facebook</Button>
-                    <Button icon={<GithubOutlined />} className="font-semibold text-lg w-72 bg-black h-10 text-white">Log In with Github</Button>
+                    <Button className="font-semibold text-lg w-72 bg-black h-10 text-white"><FontAwesomeIcon icon={faMicrosoft} />  Log In with MicroSoft</Button>
                 </div>
             </div>
         </div>
