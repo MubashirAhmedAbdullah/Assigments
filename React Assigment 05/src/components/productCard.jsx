@@ -1,14 +1,15 @@
 
 import { StarFilled, ShoppingCartOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 
 
-const ProductCard = ({item}) => {
-console.log('data==>',item);
+const ProductCard = ( {item} ) => {
+
 
 const {thumbnail, title, category, id, description, rating, price} = item
-    return (
-        
+return (
+    <Link to={`/product/${id}`}>
         <div className="max-w-xs mx-auto shadow-lg rounded-lg overflow-hidden">
             <img className="w-full h-60 object-cover object-center" src={thumbnail} alt="Product Title" />
             <div className="p-6">
@@ -32,6 +33,7 @@ const {thumbnail, title, category, id, description, rating, price} = item
                 </div>
             </div>
         </div>
+    </Link>
     )
 }
 

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Footer from "../components/footer";
 import axios from "axios";
 import ProductCard from "../components/productCard";
+import CategoryChip from "../components/categoryChip";
+
 
 
 
@@ -12,19 +14,50 @@ import ProductCard from "../components/productCard";
 function Products() {
 
     const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+    const [category, setCategory] = useState([]);
 
     useEffect(() => {
         axios.get('https://dummyjson.com/products')
             .then((res) => {
-                // console.log('res==>', res.data.products);
                 setProducts(res.data.products);
                 setLoading(false)
+            }).catch((err)=>{
+                console.log('err===>', err);
             })
     }, [])
-    return (
+
+
+
+    useEffect(()=>{
+        axios.get('https://dummyjson.com/products/categories')
+        .then((res)=>{
+            console.log('res===>',res.data);
+            setCategory(res.data);
+            setLoading(false)
+        }).catch((err)=>{
+            console.log('err===>', err);
+            setLoading(false)
+        })
+    }, [])
+    return ( 
         <div>
-            <h1 className="text-center text-3xl font-bold pt-10">Products</h1>
+            <div className="flex items-center justify-evenly pt-5">
+                <div>
+                    <select className="border-2 border-black rounded-lg w-48 scroll" name="itemsList" id="itemsList" >
+                        {
+                            category.map((data)=>{
+                                return(
+                                    <>
+                                    <CategoryChip category={data} key={data.id} />
+                                    </>
+                                )
+                            })
+                        }
+                    </select>
+                </div>
+            </div>
+            <h1 className="text-3xl font-bold pt-10 p-5">Products</h1>
 
 
             {loading ? (
