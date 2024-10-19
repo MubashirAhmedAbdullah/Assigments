@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -29,14 +29,18 @@ function ProductsDetail() {
             })
     }, [])
 
-    const {brand , category, description, images, price, rating, title, weight, thumbnail, warrantyInformation, returnPolicy} = products
+    const { brand, category, description, images, price, rating, title, weight, thumbnail, warrantyInformation, returnPolicy } = products
 
 
-    
 
-    const chekPrice = Math.ceil((price*10)/100)
+
+    const chekPrice = Math.ceil((price * 10) / 100)
     const orignalPrice = Math.ceil(chekPrice + price)
     const savedPrice = chekPrice
+
+
+    const IsLoggedOut = true
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -95,9 +99,18 @@ function ProductsDetail() {
                                     <button className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600">
                                         Add to Cart
                                     </button>
-                                   <Link to={'/order'}> <button className="ml-4 bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300">
-                                        Buy Now
-                                    </button> </Link>
+                                    {
+                                        IsLoggedOut ? (
+                                            <button onClick={() => navigate('/Auth')} className="ml-4 bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300">
+                                                Buy Now
+                                            </button>
+                                        ) : (
+                                            <Link to={'/order'}> <button className="ml-4 bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300">
+                                                Buy Now
+                                            </button> </Link>
+
+                                        )
+                                    }
                                 </div>
                                 <hr className="my-4" />
                                 <h2 className="text-xl font-bold">Product Description</h2>
@@ -109,7 +122,7 @@ function ProductsDetail() {
                                 <ul className="list-disc list-inside text-gray-700 mt-2">
                                     <li>{warrantyInformation}</li>
                                     <li>{returnPolicy}</li>
-                                    
+
                                 </ul>
                             </div>
                         </div>

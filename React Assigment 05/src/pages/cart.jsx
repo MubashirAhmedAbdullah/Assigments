@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CartItems from "../components/cartItemsCard"
 import Footer from "../components/footer";
 
@@ -6,6 +6,9 @@ import Footer from "../components/footer";
 
 
 const Cart = () => {
+  const navigate = useNavigate();
+
+  const IsLoggedOut = true
   return (
     <div>
       <div className="container mx-auto px-4 py-8">
@@ -15,6 +18,11 @@ const Cart = () => {
           {/* Cart Items Section */}
           <div className="lg:w-2/3 lg:pr-8">
             {/* Repeat CartItem as needed */}
+            <CartItems />
+            <CartItems />
+            <CartItems />
+            <CartItems />
+            <CartItems />
             <CartItems />
             {/* Add more CartItem components as needed */}
           </div>
@@ -39,9 +47,16 @@ const Cart = () => {
                 <p className="text-xl font-semibold text-gray-800">Total</p>
                 <p className="text-xl font-semibold text-blue-600">$339.97</p>
               </div>
+              {
+                IsLoggedOut ? (<button onClick={() => navigate('/Auth')} className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none transition duration-200">
+                Proceed to Checkout
+              </button>) : (
+                
               <Link to={'/order'}><button className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none transition duration-200">
                 Proceed to Checkout
               </button></Link>
+              )
+              }
             </div>
           </div>
         </div>

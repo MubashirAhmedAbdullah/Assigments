@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import axios from "axios";
 import ProductCard from "../components/productCard";
 import CategoryChip from "../components/categoryChip";
+import ProductsHeroSection from "../components/caroselForProducts";
 
 
 
@@ -42,6 +43,7 @@ function Products() {
     }, [])
     return ( 
         <div>
+            <ProductsHeroSection />
             <div className="flex items-center justify-evenly pt-5">
                 <div>
                     <select className="border-2 border-black rounded-lg w-48 scroll" name="itemsList" id="itemsList" >

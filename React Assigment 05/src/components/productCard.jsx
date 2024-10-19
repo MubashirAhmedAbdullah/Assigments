@@ -8,6 +8,7 @@ const ProductCard = ( {item} ) => {
 
 
 const {thumbnail, title, category, id, description, rating, price} = item
+
 return (
     <Link to={`/product/${id}`}>
         <div className="max-w-xs mx-auto shadow-lg rounded-lg overflow-hidden">
