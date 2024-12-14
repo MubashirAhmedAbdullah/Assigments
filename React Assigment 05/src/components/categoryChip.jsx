@@ -4,7 +4,7 @@
 
 function CategoryChip( { category } ){
 
-    console.log('category==>', category.slug);
+    
     const listItems = category.slug
     return (
         
